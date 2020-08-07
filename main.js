@@ -36,7 +36,7 @@ for (let i = 0; i < array.length; i++) {
 const arrayOrdenado = ([...array.sort((a, b) => (b.precio - a.precio))])
 
 console.log(`Vehículo más caro: ${arrayOrdenado[0].marca} ${arrayOrdenado[0].modelo}`)
-console.log(`Vehículo más barato: ${arrayOrdenado[3].marca} ${arrayOrdenado[3].modelo}`)
+console.log(`Vehículo más barato: ${arrayOrdenado[arrayOrdenado.length-1].marca} ${arrayOrdenado[arrayOrdenado.length-1].modelo}`)
 
 array.forEach(element => {
     if(element.marca.includes("Y")){
